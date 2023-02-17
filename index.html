@@ -31,17 +31,17 @@
 
         //spread operators
 
-        const globalPlayer={
-          id:0,
-          name:"Bot",
-          powerLevel:100,
-        };
-        console.log(globalPlayer);
-        const player1=globalPlayer;
-        console.log(player1)
-        player1.name="arun"
-        console.log(player1)
-        console.log(globalPlayer)
+        // const globalPlayer={
+        //   id:0,
+        //   name:"Bot",
+        //   powerLevel:100,
+        // };
+        // console.log(globalPlayer);
+        // const player1=globalPlayer;
+        // console.log(player1)
+        // player1.name="arun"
+        // console.log(player1)
+        // console.log(globalPlayer)
         
         //in string it is not affect(pass by reference)
         // let name="kran"
@@ -53,13 +53,30 @@
         // console.log(name1)
         
         //pass by reference exmple in array
+        // const arr=["raun","kiran","abii"]
+        // let arr2=arr;
+        // console.log(arr)
+        // console.log(arr2)
+        // arr2[1]="jithin"
+        // console.log(arr)
+        // console.log(arr2)
+        
+        //destructruing
         const arr=["raun","kiran","abii"]
-        let arr2=arr;
-        console.log(arr)
-        console.log(arr2)
-        arr2[1]="jithin"
-        console.log(arr)
-        console.log(arr2)
+
+        const [first,second,third]=arr;
+        console.log(third)
+
+        const person={
+            name:"jithin",
+            age:25,
+            place:"kannur"
+        }
+        const {name,place,age}=person;
+        console.log(place)
+        console.log(name)
+        // rest
+
 
     </script>
 </body>
