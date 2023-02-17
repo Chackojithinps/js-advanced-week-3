@@ -15,19 +15,42 @@
     <button id="btn1">Second Button</button>
 
     <script>
-        document.getElementById('header').innerHTML="Debug media"
-        document.getElementsByClassName('header')[0].innerHTML="Jithin"
-        document.getElementsByClassName('header')[1].innerHTML="jinto"
-        document.getElementsByTagName('h1')[0].innerHTML="kiran"
-        function clicked(){
-            alert("Hello")
-        }
-        var button1=document.getElementById('btn1');
-        button1.addEventListener("click",Myfunc)
-        function Myfunc(){
-            alert("This is testing");
-        }
+        // document.getElementById('header').innerHTML="Debug media"
+        // document.getElementsByClassName('header')[0].innerHTML="Jithin"
+        // document.getElementsByClassName('header')[1].innerHTML="jinto"
+        // document.getElementsByTagName('h1')[0].innerHTML="kiran"
+        // function clicked(){
+        //     alert("Hello")
+        // }
+        // var button1=document.getElementById('btn1');
+        // button1.addEventListener("click",Myfunc)
+        // function Myfunc(){
+        //     alert("This is testing");
+        // }
 
+
+        //spread operators
+
+        const globalPlayer={
+          id:0,
+          name:"Bot",
+          powerLevel:100,
+        };
+        console.log(globalPlayer);
+        const player1=globalPlayer;
+        console.log(player1)
+        player1.name="arun"
+        console.log(player1)
+        console.log(globalPlayer)
+        
+        //in string it is not affect(pass by reference)
+        let name="kran"
+        let name1=name;
+        console.log(name)
+        console.log(name1)
+        name1="amal"
+        console.log(name)
+        console.log(name1)
     </script>
 </body>
   
