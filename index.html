@@ -62,24 +62,24 @@
         // console.log(arr2)
         
         //destructruing
-        const arr=["raun","kiran","abii"]
+        // const arr=["raun","kiran","abii"]
 
         // const [first]=arr;
-        const [first,second,third]=arr;
+        // const [first,second,third]=arr;
 
-        console.log(first)
+        // console.log(first)
 
-        const person={
-            name:"jithin",
-            age:25,
-            place:"kannur"
-        }
+        // const person={
+        //     name:"jithin",
+        //     age:25,
+        //     place:"kannur"
+        // }
         
-        const person2={
-            name:"jithin1",
-            age:25,
-            place:"kannur1"
-        }
+        // const person2={
+        //     name:"jithin1",
+        //     age:25,
+        //     place:"kannur1"
+        // }
         // const {name,place}=person;
         // console.log(place)
         // console.log(name)
@@ -90,6 +90,117 @@
         // const {name,...rest}=person
         // console.log(name)
         // console.log(rest)
+        
+        
+        // forEach
+
+        // const arr=[3,5,6,7,10]
+        // sum=0;
+        // arr.forEach(function(item){
+        //     sum=sum+item
+        // })
+        // console.log(sum)
+        
+        // map function
+    
+        // const numbers = [65, 44, 12, 4];
+        // const newArr = numbers.map(myFunction)
+
+        // function myFunction(num) {
+        //  return num * 10;
+        // }
+        // console.log(newArr)
+
+        //filter()
+
+        // const numbers = [65, 44, 12, 4];
+        // const newArr=numbers.filter((value)=>{
+        //     return value>=15
+        // })
+        // console.log(newArr)
+         
+
+        // const numbers1 = [65, 44, 12,88, 4];
+        // const newArr1=numbers1.filter((value)=>{
+        //     if(value>=14){
+        //         return true;
+        //     }
+        // })
+        // console.log(newArr1)
+        
+        // reduce()
+
+        // const number1=[2,4,6,8,10];
+        // const newValue=number1.reduce(function myFunc(total,value){
+        //     return total+value
+        // },0)
+        // console.log(newValue)
+
+        // const number1=[2,4,6,8,10];
+        // const newValue=number1.reduce(myFunc,0)
+        // function myFunc(total,val){
+        //      total=total+val;
+        //      return total
+        // }
+        // console.log(newValue)
+ 
+
+        // const number1=[12,41,61,18,10];
+
+        // const maxVal=number1.reduce((total,val)=>{
+        //     if(val>total){
+        //         total=val;
+                          
+        //     }
+        //     return total
+        // },0)
+        // console.log(maxVal)
+        
+        // const arr=[
+        //     {firstName:"jithin",age:23},
+        //     {firstName:"kiran",age:23},
+        //     {firstName:"varma",age:35},
+        //     {firstName:"midhun",age:23},
+        //  ]
+        //  const newArr=arr.filter((val)=>val.age<25).map((val)=>val.firstName)
+        //  console.log(newArr)
+
+        // const arr=[
+        //     {firstName:"jithin",age:23},
+        //     {firstName:"kiran",age:23},
+        //     {firstName:"varma",age:35},
+        //     {firstName:"midhun",age:23},
+        //  ]
+        // const newArr=arr.filter((val)=>{
+        //     val.age<25
+        // }).map((val)=>{
+        //     return val.firstName
+        // })
+        // console.log(newArr)
+         
+
+        //sort()
+
+        // const a=[3,5,66,2,77,34,65]
+        // a.sort();
+        // const c=a.sort((a,b)=>a-b)
+        // console.log(c)
+        // const b=a.sort((a,b)=>b-a)
+        // console.log(b)
+
+        const person={
+            name:"ajmal",
+            age:34,
+            place:"malaPpuram",
+            details:{
+                 car:"benz",
+                 model:2004,
+                 color:"red"
+            }
+        }
+        if(person?.details?.car){
+            console.log(person.details.car)
+        }
         
     </script>
 </body>
